@@ -3,7 +3,7 @@ import socket
 import time
 
 #dest ip
-DEST_IP = "127.0.0.1"
+DEST_IP = "192.168.137.228"
 #port number
 PORT = 5005
 #Student ID
@@ -13,6 +13,8 @@ SEND_TIMES = 10
 
 #Create a socket
 def CreateSocket():
+    #socket.AF_INET	於伺服器與伺服器之間進行串接
+    #socket.SOCK_DGRAM UDP 傳輸方式
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
     return sock
 
